@@ -6,7 +6,7 @@ import smtplib
 def send_for_email(text):
     msg = MIMEMultipart()
     
-    password = "kabinet35"
+    password = "qetGLzNTmCd49kpukyxz"
     msg['From'] = "sbz35@mail.ru"
     msg['To'] = "sb-mail@bk.ru"
     msg['Subject'] = f'Позвонить!'
