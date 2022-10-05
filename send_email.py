@@ -8,7 +8,7 @@ def send_for_email(text):
     
     password = "qetGLzNTmCd49kpukyxz"
     msg['From'] = "sbz35@mail.ru"
-    msg['To'] = "sb-mail@bk.ru"
+    msg['To'] = "za02za02@bk.ru"
     msg['Subject'] = f'Позвонить!'
 
     msg.attach(MIMEText(text))

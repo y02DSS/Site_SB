@@ -5,6 +5,7 @@
         <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
         <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/style.css') }}">
         <link rel="shortcut icon" href="static/images/logo.png" type="image/png">
+        <title>Система безопасности</title>
     </head>
     <body>
         <section class="header-section mb-0">
@@ -41,9 +42,8 @@
                         <a href="#" data-bs-toggle="modal" data-bs-target=".exampleModal"><div class="blue-btn">ЗАКАЗАТЬ</div></a>
                         <a href="#products"><div class="white-btn">КАТАЛОГ</div></a>
                     </div>
-                    <p class="menu-date">Работаем с 05.05.2000</p>
                 </div>
-                
+                <p class="menu-date">Работаем с 05.05.2000</p>
             </div>             
         </section>
         <section class="low-price-section">
@@ -91,7 +91,7 @@
                             <li>GSM сигнализация</li>
                         </ul>
                         <ul class="col-4">
-                            <li>Речевое оповещение о пожаре и музыкальная трансляция</li>
+                            <li>Речевое оповещение о пожаре</li>
                             <li>Средства пожаротушения</li>
                             <li>Контроль и управление доступом</li>
                             <li>Источники питания и аккумуляторы</li>
@@ -234,12 +234,12 @@
                             <a target="_blank" href="https://tantos.com.ru/"><img src="static/images/tantos.png"></a>
                             <a target="_blank" href="https://www.vipaks.ru/"><img src="static/images/vipaks.png"></a>
                             <a target="_blank" href="https://satvision-cctv.ru/"><img src="static/images/satvision.png"></a>
+                            <a target="_blank" href="https://devline.ru/wherebuy/world/cherepovec/"><img src="static/images/line.png"></a>
                             <a target="_blank" href="https://optimus-cctv.ru/"><img src="static/images/optimus.png"></a>      
                         </div>
                         <p class="nomination">Основные торговые дома на российском рынке систем безопасности с полным перечнем оборудования:</p>
                         <div>
                             <a target="_blank" href="https://www.tinko.ru/"><img src="static/images/tinko.png"></a>
-                            <a target="_blank" href="https://devline.ru/wherebuy/world/cherepovec/"><img src="static/images/line.png"></a>
                             <a target="_blank" href="https://satro-paladin.com/"><img src="static/images/satro.png"></a>
                             <a target="_blank" href="https://luis.ru/"><img src="static/images/luis.png"></a>
                         </div>
@@ -255,7 +255,7 @@
                 <p class="section-text">УСТАНОВЛЕНО ОБОРУДОВАНИЕ</p>
                 <p class="section-min-text">Все монтажные работы выполнены ООО «Спец-Защита»</p>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators" style="bottom: -30px;">
+                    <div class="carousel-indicators carousel-works">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
                         {% for id in photo_gallery %}
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{id[0]}}" aria-label="Slide {{id[0]}}"></button>
@@ -277,7 +277,7 @@
                                 </div>
                                 <div class="carousel-caption d-none d-md-block photo-gallery-text">
                                     <h5>{{photo[1]}}</h5>
-                                    <p>{{photo[2]}}</p>
+                                    <p class="carousel-description-text">{{photo[2]}}</p>
                                 </div>
                             </div>
                         {% endfor %}
@@ -320,7 +320,7 @@
                         главные критерии своей работы:
                     </p>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-7 col-lg-6">
                             <p class="product-name m-0">НАШИ ГЛАВНЫЕ КРИТЕРИИ РАБОТЫ</p>
                             <p class="product-description m-0">1. ЦЕНА – должна быть интересна нашим клиентам</p>
                             <p class="product-description m-0">2. ГАРАНТИЯ – вы приносите неисправное оборудование к нам в офис. Мы восстанавливаем его сами или отправляем за наш счёт в сервис компании поставщика</p>
@@ -328,7 +328,7 @@
                             <p class="product-description m-0">4. СРОК ПОСТАВКИ – как правило, раз в неделю</p>
                             <p class="product-description m-0">5. РАБОТАЕМ ПОД ЗАКАЗ – найдётся почти всё</p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-5 col-lg-6">
                             <p class="product-name m-0">РЕКВИЗИТЫ КОМПАНИИ</p>
                             <p class="product-description m-0">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ: "СИСТЕМА БЕЗОПАСНОСТИ"</p>
                             <p class="product-description m-0">ИНН: 3528068443</p>
