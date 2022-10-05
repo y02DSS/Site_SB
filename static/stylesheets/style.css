@@ -47,7 +47,7 @@ section{
     color: #00094f;
     font-weight: 700;
     font-size: 32px;
-    text-shadow: 7px -7px rgba(0, 9, 79, 0.1);    
+    /* text-shadow: 7px -7px rgba(0, 9, 79, 0.1);    */
 }
 
 .header-section{
