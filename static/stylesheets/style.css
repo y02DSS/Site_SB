@@ -208,7 +208,6 @@ section{
 }
 
 .product-name{
-    font-size: 22px;
     font-weight: 700;
     color: #00094F;
 }
@@ -220,7 +219,6 @@ section{
 }
 
 .product-price{
-    font-size: 18px;
     font-weight: 500;
     color: #00094F;
 }
@@ -364,16 +362,20 @@ section{
         left: -10%;
     }
 
-    .products-explanation{
-        font-size: 22px;
-    }
-
-    .other-products-name ul li, .company-price .nomination, .carousel-description-text{
-        font-size: 22px;
+    .products-explanation,
+    .other-products-name ul li, 
+    .company-price .nomination, 
+    .carousel-description-text, 
+    .my-form-label,
+    .my-form-phone a,
+    .main-address,
+    .product-price,
+    .product-name{
+        font-size: 24px;
     }
 
     .carousel-works{
-        bottom: -40px;
+        bottom: -50px;
     }
 
     .product-description{
@@ -391,23 +393,11 @@ section{
     }
 
     .products-card{
-        height: 350px;
-    }
-
-    .my-form-label{
-        font-size: 22px;
+        height: 380px;
     }
 
     .my-form-phone p{
         font-size: 18px;
-    }
-
-    .my-form-phone a{
-        font-size: 22px;
-    }
-
-    .main-address{
-        font-size: 22px;
     }
 }
 
@@ -440,7 +430,16 @@ section{
         font-size: 16px;
     }
 
-    .other-products-name ul li, .company-price .nomination, .carousel-description-text{
+    .product-name{
+        font-size: 22px;
+    }
+
+    .other-products-name ul li, 
+    .company-price .nomination, 
+    .carousel-description-text, 
+    .my-form-label,
+    .my-form-phone a,
+    .product-price{
         font-size: 18px;
     }
 
@@ -466,16 +465,8 @@ section{
         height: 300px;
     }
 
-    .my-form-label{
-        font-size: 18px;
-    }
-
     .my-form-phone p{
         font-size: 16px;
-    }
-
-    .my-form-phone a{
-        font-size: 18px;
     }
 
     .main-address{
