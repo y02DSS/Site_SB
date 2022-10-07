@@ -1,7 +1,8 @@
-/* 
-33, 83, 141
-0, 9, 79 
-*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+a, span, h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
 
 body{
     background-color:rgba(0, 9, 79, 0.1)
@@ -399,6 +400,10 @@ section{
     .my-form-phone p{
         font-size: 18px;
     }
+
+    #canvas{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -471,5 +476,9 @@ section{
 
     .main-address{
         font-size: 16px;
+    }
+
+    #canvas{
+        display: block;
     }
 }
