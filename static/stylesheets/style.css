@@ -338,6 +338,13 @@ section{
     margin: 0 auto;
 }
 
+input[type=submit] {
+    background: url("../images/line.png");
+    width: 190px;
+    height: 100%;
+    border: none;
+}
+
 @media screen and (min-width: 545px) {
     .menu-buy-text{
         font-size: 48px;
