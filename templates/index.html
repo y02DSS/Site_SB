@@ -1,11 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="ru">
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title>Система безопасности</title>
+        <meta name="description" content="Система безопасности Череповец 
+            Тел. +7(8202)58-68-29
+            ул. Вологодская 4, г. Череповец">
+        <meta name="keywords" content="видеокамера, сигнализация, охрана, пожарная сигнализация, домофон, пожаротушение, турникет, электрозамок, карта доступа, аккумулятор"/>
+        <meta name="title" content="Системы безопасности - недорого, быстро, качественно - поддерживаем два из трёх">
+        <meta name="description" content="На рынке систем безопасности с 2000 года. Мы работали с брендами, которые уже в истории. Проверенный ассортимент, гуманные цены. Привозим под заказ по запросам клиента."/>
+        <meta name="viewport">
+        <meta property="og:title" content="Система безопасности Череповец"/>
+        <meta property="og:type" content="website"/> 
+        <meta property="og:image" content="https://sb35.ru/static/images/logo_2.webp"/>
+        <meta property="og:url" content="https://sb35.ru/"/> 
+        <meta property="og:description" content="На рынке систем безопасности с 2000 года. Мы работали с брендами, которые уже в истории. Проверенный ассортимент, гуманные цены. Привозим под заказ по запросам клиента."/>
+        <meta property="og:site_name" content="Система безопасности Череповец"/> 
         <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/bootstrap.min.css') }}">
-        <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
         <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/style.css') }}">
         <link rel="shortcut icon" href="static/images/logo.png" type="image/png">
-        <title>Система безопасности</title>
     </head>
     <body>
         <!-- Yandex.Metrika counter -->
@@ -29,16 +43,16 @@
             <div class="container-fluid">
                 <div class="row menu">
                     <div class="col-1">
-                        <img class="menu-img" src="static/images/logo.png" >
+                        <img class="menu-img" src="static/images/logo.png" alt="Логотип Система Безопасности" title="Логотип">
                     </div>
                     <div class="col-2">
-                        <a class="menu-link" href="#products">АССОРТИМЕНТ</a>
+                        <h1><a class="menu-link" href="#products">АССОРТИМЕНТ</a></h1>
                     </div>
                     <div class="col-2">
-                        <a class="menu-link" href="#photo">ОБЪЕКТЫ</a>
+                        <h1><a class="menu-link" href="#photo">ОБЪЕКТЫ</a></h1>
                     </div>
                     <div class="col-2">
-                        <a class="menu-link" href="#about">КОНТАКТЫ</a>
+                        <h1><a class="menu-link" href="#about">КОНТАКТЫ</a></h1>
                     </div>
                     <div class="col-5">
                         <div class="menu-btn">
@@ -53,7 +67,6 @@
                 <canvas id="canvas"></canvas>
                 <div class="container canvas-text">
                     <p class="menu-buy-text">Система безопасности-<br>инструмент<br>вашего спокойствия</p>
-                    <!-- <p class="menu-buy-text">БЕЗОПАСНО-<br>НЕ ЗНАЧИТ ДОРОГО</p> -->
                     <p class="menu-buy-description">«Безопасность - это процесс, а не результат»<br>Брюс Шнайер</p>
                     <div class="d-flex">
                         <a href="#" data-bs-toggle="modal" data-bs-target=".exampleModal"><div class="blue-btn">ЗАКАЗАТЬ</div></a>
@@ -67,19 +80,19 @@
             <div id="carouselExampleControls" class="carousel slide low-price-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="static/images/list/1.jpg" class="d-block w-100" alt="..." style="object-position: 0px 60%;">
+                    <img src="static/images/list/1.webp" class="d-block w-100" alt="Удобное расположение" title="Удобное расположение" style="object-position: 0px 60%;">
                     <div class="low-price-carousel-text">
                         <p><br>Удобное расположение</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="static/images/list/2.jpg" class="d-block w-100" alt="...">
+                    <img src="static/images/list/2.webp" class="d-block w-100" alt="Качественная продукция" title="Качественная продукция">
                     <div class="low-price-carousel-text">
                         <p><br>Качественная продукция</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="static/images/list/3.jpg" class="d-block w-100" alt="...">
+                    <img src="static/images/list/3.webp" class="d-block w-100" alt="Низкие цены" title="Низкие цены">
                     <div class="low-price-carousel-text">
                         <p><br>Низкие цены</p>
                     </div>
@@ -96,9 +109,9 @@
               </div>
         </section>
         <section class="products-section">
-            <a name="products"></a> 
+            <a id="products"></a> 
             <div class="container">
-                <p class="section-text">КАТЕГОРИИ ОБОРУДОВАНИЯ</p>
+                <h1><p class="section-text">КАТЕГОРИИ ОБОРУДОВАНИЯ</p></h1>
                 <div class="other-products">
                     <div class="row other-products-name">
                         <ul class="col-4">
@@ -121,17 +134,16 @@
                         </ul>
                     </div>
                 </div>                
-                <p class="section-text">ПОПУЛЯРНАЯ ПРОДУКЦИЯ</p>
+                <h1><p class="section-text">ПОПУЛЯРНАЯ ПРОДУКЦИЯ</p></h1>
                 <div class="one-product">
-                    <span class="icon"><img src="static/images/icons/sale.png"></span>
-                    <a data-bs-toggle="collapse" href="#saleProducts" aria-expanded="false" aria-controls="saleProducts"><p class="section-min-text sale">Распродажа</p></a>
+                    <h2><a data-bs-toggle="collapse" href="#saleProducts" aria-expanded="false" aria-controls="saleProducts"><span class="icon"><img src="static/images/icons/sale.png" alt="Скидки"></span><p class="section-min-text sale">Распродажа</p></a></h2>
                     <p class="products-explanation">(Нажми, чтобы открыть или закрыть)</p>
                     <div class="row gy-3 collapse" id="saleProducts">
                         {% for item in sale %}
                         <div class="col-lg-6 col-md-12 gx-5">
                             <div class="products-card row">
                                 <div class="col-6 m-auto">
-                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}">
+                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}" alt="{{item["name"]}}" title="{{item["name"]}}">
                                 </div>
                                 <div class="col-6 product-card-text">
                                     <p class="product-name">{{item["name"]}}</p>
@@ -147,15 +159,14 @@
                     </div>
                 </div>
                 <div class="one-product">
-                    <span class="icon"><img src="static/images/icons/video.png"></span>
-                    <a data-bs-toggle="collapse" href="#videoCamera" aria-expanded="false" aria-controls="videoCamera"><p class="section-min-text">Видеонаблюдение</p></a>
+                    <h2><a data-bs-toggle="collapse" href="#videoCamera" aria-expanded="false" aria-controls="videoCamera"><span class="icon"><img src="static/images/icons/video.png" alt="Видеонаблюдение"></span><p class="section-min-text">Видеонаблюдение</p></a></h2>
                     <p class="products-explanation">(Нажми, чтобы открыть или закрыть)</p>
                     <div class="row gy-3 collapse" id="videoCamera">
                         {% for item in products_camera %}
                         <div class="col-lg-6 col-md-12 gx-5">
                             <div class="products-card row">
                                 <div class="col-6 m-auto">
-                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}">
+                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}" alt="{{item["name"]}}" title="{{item["name"]}}">
                                 </div>
                                 <div class="col-6 product-card-text">
                                     <p class="product-name">{{item["name"]}}</p>
@@ -171,15 +182,14 @@
                     </div>
                 </div>
                 <div class="one-product">
-                    <span class="icon"><img src="static/images/icons/fire.png"></span>
-                    <a data-bs-toggle="collapse" href="#fire" aria-expanded="false" aria-controls="fire"><p class="section-min-text">Охранно-пожарная сигнализация</p></a>
+                    <h2><a data-bs-toggle="collapse" href="#fire" aria-expanded="false" aria-controls="fire"><span class="icon"><img src="static/images/icons/fire.png" alt="Охранно-пожарная сигнализация"></span><p class="section-min-text">Охранно-пожарная сигнализация</p></a></h2>
                     <p class="products-explanation">(Нажми, чтобы открыть или закрыть)</p>
                     <div class="row gy-3 collapse" id="fire">
                         {% for item in products_firefighting %}
                         <div class="col-lg-6 col-md-12 gx-5">
                             <div class="products-card row">
                                 <div class="col-6 m-auto">
-                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}">
+                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}" alt="{{item["name"]}}" title="{{item["name"]}}">
                                 </div>
                                 <div class="col-6 product-card-text">
                                     <p class="product-name">{{item["name"]}}</p>
@@ -195,15 +205,14 @@
                     </div>
                 </div>
                 <div class="one-product">
-                    <span class="icon"><img src="static/images/icons/domofon.png"></span>
-                    <a data-bs-toggle="collapse" href="#domofon" aria-expanded="false" aria-controls="domofon"><p class="section-min-text">Контроль и управление доступом, домофоны</p></a>
+                    <h2><a data-bs-toggle="collapse" href="#domofon" aria-expanded="false" aria-controls="domofon"><span class="icon"><img src="static/images/icons/domofon.png" alt="Контроль и управление доступом, домофоны"></span><p class="section-min-text">Контроль и управление доступом, домофоны</p></a></h2>
                     <p class="products-explanation">(Нажми, чтобы открыть или закрыть)</p>
                     <div class="row gy-3 collapse" id="domofon">
                         {% for item in domofons %}
                         <div class="col-lg-6 col-md-12 gx-5">
                             <div class="products-card row">
                                 <div class="col-6 m-auto">
-                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}">
+                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}" alt="{{item["name"]}}" title="{{item["name"]}}">
                                 </div>
                                 <div class="col-6 product-card-text">
                                     <p class="product-name">{{item["name"]}}</p>
@@ -219,15 +228,14 @@
                     </div>
                 </div>
                 <div class="one-product">
-                    <span class="icon"><img src="static/images/icons/akum.png"></span>
-                    <a data-bs-toggle="collapse" href="#akb" aria-expanded="false" aria-controls="akb"><p class="section-min-text">Источники питания и аккумуляторы</p></a>
+                    <h2><a data-bs-toggle="collapse" href="#akb" aria-expanded="false" aria-controls="akb"><span class="icon"><img src="static/images/icons/akum.png" alt="Источники питания и аккумуляторы"></span><p class="section-min-text">Источники питания и аккумуляторы</p></a></h2>
                     <p class="products-explanation">(Нажми, чтобы открыть или закрыть)</p>
                     <div class="row gy-3 collapse" id="akb">
                         {% for item in akb %}
                         <div class="col-lg-6 col-md-12 gx-5">
                             <div class="products-card row">
                                 <div class="col-6 m-auto">
-                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}">
+                                    <img class="product-card-img w-100" src="static/images/products/{{item["img"]}}" alt="{{item["name"]}}" title="{{item["name"]}}">
                                 </div>
                                 <div class="col-6 product-card-text">
                                     <p class="product-name">{{item["name"]}}</p>
@@ -248,20 +256,20 @@
                             АКТУАЛЬНЫЕ розничные цены можно найти на их сайтах. В том числе:
                         </p>
                         <div>
-                            <a target="_blank" href="https://tantos.com.ru/"><img src="static/images/tantos.png"></a>
-                            <a target="_blank" href="https://www.vipaks.ru/"><img src="static/images/vipaks.png"></a>
-                            <a target="_blank" href="https://satvision-cctv.ru/"><img src="static/images/satvision.png"></a>
+                            <a target="_blank" href="https://tantos.com.ru/"><img src="static/images/tantos.png" alt="tantos" title="https://tantos.com.ru/"></a>
+                            <a target="_blank" href="https://www.vipaks.ru/"><img src="static/images/vipaks.png" alt="vipaks" title="https://www.vipaks.ru/"></a>
+                            <a target="_blank" href="https://satvision-cctv.ru/"><img src="static/images/satvision.png" alt="satvision-cctv" title="https://satvision-cctv.ru/"></a>
                             <form method="post" action="https://devline.ru/wherebuy/world/cherepovec/" target="_blank" style="margin-top:-15px">
                                 <input type="hidden" name="id" value="1095">
                                 <input type="submit" value="">
                             </form>
-                            <a target="_blank" href="https://optimus-cctv.ru/"><img src="static/images/optimus.png"></a>      
+                            <a target="_blank" href="https://optimus-cctv.ru/"><img src="static/images/optimus.png" alt="optimus-cctv" title="https://optimus-cctv.ru/"></a>      
                         </div>
                         <p class="nomination">Основные торговые дома на российском рынке систем безопасности с полным перечнем оборудования:</p>
                         <div>
-                            <a target="_blank" href="https://www.tinko.ru/"><img src="static/images/tinko.png"></a>
-                            <a target="_blank" href="https://satro-paladin.com/"><img src="static/images/satro.png"></a>
-                            <a target="_blank" href="https://luis.ru/"><img src="static/images/luis.png"></a>
+                            <a target="_blank" href="https://www.tinko.ru/"><img src="static/images/tinko.png" alt="tinko" title="https://www.tinko.ru/"></a>
+                            <a target="_blank" href="https://satro-paladin.com/"><img src="static/images/satro.png" alt="satro-paladin" title="https://satro-paladin.com/"></a>
+                            <a target="_blank" href="https://luis.ru/"><img src="static/images/luis.png" alt="luis" title="https://luis.ru/"></a>
                         </div>
                         <p class="motto">РОЗНИЦА - ЭТО НЕ ДЛЯ ВАС</p>
                         <p class="nomination">Звоните, пишите, приходите - согласуем цены и сроки</p>
@@ -270,10 +278,10 @@
             </div>
         </section>
         <section class="photo-section">
-            <a name="photo"></a>
+            <a id="photo"></a>
             <div class="container">
-                <p class="section-text">УСТАНОВЛЕНО ОБОРУДОВАНИЕ</p>
-                <p class="section-min-text">Все монтажные работы выполнены ООО «Спец-Защита»</p>
+                <h1><p class="section-text">УСТАНОВЛЕНО ОБОРУДОВАНИЕ</p></h1>
+                <h2><p class="section-min-text">Все монтажные работы выполнены ООО «Спец-Защита»</p></h2>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators carousel-works">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
@@ -287,11 +295,11 @@
                                 <div class="photo-gallery-imgs d-block w-100">
                                     <div class="row">
                                         <div class="col-6">
-                                            <img src="static/images/works/{{photo[3]}}" class="photo-gallery-img-1 w-100 h-100" alt="...">
+                                            <img src="static/images/works/{{photo[3]}}" class="photo-gallery-img-1 w-100 h-100" alt="{{photo[1]}}_1" title="{{photo[1]}}_1">
                                         </div>
                                         <div class="col-6">
-                                            <img src="static/images/works/{{photo[4]}}" class="photo-gallery-img-2 w-100" alt="...">
-                                            <img src="static/images/works/{{photo[5]}}" class="photo-gallery-img-2 w-100" alt="...">
+                                            <img src="static/images/works/{{photo[4]}}" class="photo-gallery-img-2 w-100" alt="{{photo[1]}}_2" title="{{photo[1]}}_2">
+                                            <img src="static/images/works/{{photo[5]}}" class="photo-gallery-img-2 w-100" alt="{{photo[1]}}_3" title="{{photo[1]}}_3">
                                         </div>
                                     </div>
                                 </div>
@@ -313,12 +321,12 @@
             </div>
         </section>
         <section class="about-section">
-            <a name="about"></a>
+            <a id="about"></a>
             <div class="container">
-                <p class="section-text">О КОМПАНИИ</p>
+                <h1><p class="section-text">О КОМПАНИИ</p></h1>
                 <div class="about products-card">
                     <div class="row">
-                        <div class="col-2" style="text-align: center;"><img class="menu-img" src="static/images/logo.png"></div>
+                        <div class="col-2" style="text-align: center;"><img class="menu-img" src="static/images/logo.png" alt="Логотип Система Безопасности" title="Логотип"></div>
                         <div class="col-10">
                             <p class="product-name">ООО СТЕМА БЕЗОПАСНОСТИ – розничная и оптовая продажа 
                                 оборудования обеспечения безопасности, консультирование</p>
@@ -363,7 +371,7 @@
         </section>
         <section class="map-section mb-0">
             <div class="map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c02fc1e6cd89b68d350bd824262d2d87fa5d96ab6fa4da0a513e67cef580a6b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                <iframe title="Расположение" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c02fc1e6cd89b68d350bd824262d2d87fa5d96ab6fa4da0a513e67cef580a6b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                 <div class="map-about">
                     <p class="product-name">КОНТАКТЫ</p>
                     <p class="product-price m-0">Телефоны:</p>

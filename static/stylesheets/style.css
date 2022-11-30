@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 
-a, span, h1, h2, h3, h4, h5, h6{
+a, span, h2, h3, h4, h5, h6{
     font-family: 'Oswald', sans-serif;
 }
 
 body{
     background-color:rgba(0, 9, 79, 0.1)
+}
+
+body::-webkit-scrollbar {
+    background-color: #f9f9fd;
+    width: 10px;
+    padding-bottom: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00094F;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
 }
 
 a{
@@ -19,7 +36,7 @@ section{
 #bg-canvas {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.6), white), url('../images/header.jpeg');
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.6), white), url('../images/header.webp');
     /* background-position: 550px center; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,6 +234,23 @@ section{
     font-weight: 500;
     color: #00094F;
     overflow-y: auto;
+}
+
+.product-description::-webkit-scrollbar {
+    background-color: #f9f9fd;
+    width: 5px;
+    padding-bottom: 20px;
+}
+
+.product-description::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00094F;
+}
+
+.product-description::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
 }
 
 .product-price{
